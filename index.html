@@ -1,0 +1,91 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+
+
+<style>
+.position
+{
+position:relative;
+top:30%;
+left:30%;
+}
+
+.user
+{
+position:relative;
+top:185px;
+left:420px;
+color:rgb(204,255,0);
+}
+
+.pass
+{
+position:relative;
+top:185px;
+left:500px;
+color:rgb(204,255,0);
+}
+
+h1
+{
+color:rgb(204,255,0);
+}
+
+
+
+</style>
+</head>
+<body style="background:#07252d;">
+
+<script>
+
+function con()
+
+{
+
+var a=document.getElementById("abc").value;
+
+
+var b=document.getElementById("efg").value;
+
+var c=localStorage.getItem("textvalue");
+
+
+var d=localStorage.getItem("walue");
+
+if((a=="paul") && (b=="paul"))
+
+{
+
+window.location.href="menu formation.html";
+}
+else if((a==c) && (b==d))
+{
+window.location.href="menu formation.html";
+}
+
+else
+{
+window.alert("wrong email or password");
+
+}
+
+}
+
+</script>
+
+<h1 align=center><u>PAUL PAGE</u></h1>
+<span class="user">USER NAME</span>
+<span class="pass">PASSWORD</span>
+<div class="position">
+<input type="text" id="abc">
+<input type="password" id="efg">
+
+<input type="submit" onclick="con()"/>
+<button type="button"><a href="p2.html">create</button>
+</div>
+</body>
+
+</html>
